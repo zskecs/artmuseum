@@ -11,6 +11,8 @@ public class ImageJdbcRepository implements ImageRepository {
 
     DatabaseManager databaseManager = new DatabaseManager();
 
+    Connection conn = DriverManager.getConnection(dbURL);
+
     private DataSource dataSource = databaseManager.connect();
 
     public ImageJdbcRepository() throws SQLException {

@@ -12,6 +12,7 @@ public class DatabaseManager {
         dataSource.setDatabaseName(System.getenv().get("DATABASE_NAME"));
         dataSource.setUser(System.getenv().get("PSQL_USERNAME"));
         dataSource.setPassword(System.getenv().get("PSQL_PASSWORD"));
+        dataSource.setUrl(System.getenv("DATABASE_URL"));
 
 
         System.out.println("Trying to connect...");

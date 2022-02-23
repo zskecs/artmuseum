@@ -7,4 +7,3 @@ CREATE TABLE image (
     extension VARCHAR NOT NULL,
     PRIMARY KEY (id)
 );
-GRANT ALL PRIVILEGES ON TABLE image TO myuser;
